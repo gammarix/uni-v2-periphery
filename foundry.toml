@@ -1,8 +1,7 @@
 [profile.default]
 src = "src"
 out = "out"
-script = "script"
-libs = ["lib", "node_modules"]
+libs = ["lib"]
 auto_detect_solc = true
 gas_reports = ["*"]
 optimizer = true
@@ -13,17 +12,6 @@ fs_permissions = [
     { access = "read", path = "./broadcast" },
     { access = "read", path = "./reports" },
 ]
-
-[fmt]
-bracket_spacing = true
-int_types = "long"
-line_length = 120
-multiline_func_header = "all"
-number_underscore = "thousands"
-quote_style = "double"
-tab_width = 4
-wrap_comments = true
-
 
 [rpc_endpoints]
 kairos_testnet = "${KAIROS_TESTNET_RPC_URL}"
